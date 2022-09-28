@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CurrentChooserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Convert from:"
+                    android:layout_gravity="center_horizontal"/>
+                <RadioGroup
+                    android:id="@+id/radioGroupInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <RadioButton
+                        android:id="@+id/InputEuro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/euro"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/InputDollar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/InputLibra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/libra"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Convert to:"
+                    android:layout_gravity="center_horizontal"/>
+                <RadioGroup
+                    android:id="@+id/radioGroupOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <RadioButton
+                        android:id="@+id/OutputEuro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/euro"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/OutputDollar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/OutputLibra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/libra"
+                        android:onClick="onRadioButtonClicked">
+
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeCurrencies"
+            android:layout_gravity="center_horizontal"
+            android:text="Convert">
+
+        </Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

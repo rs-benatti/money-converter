@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Money_Converter</string>
+    <string name="euros_label">Euro</string>
+    <string name="euro">€</string>
+    <string name="dollar">$</string>
+    <string name="libra">£</string>
+    <string name="rate">Current exchange rate:\t </string>
+    <string name="dollars_label">Dollars </string>
+    <string name="button_convert">Convert </string>
+    <string name="button_currencies">Choose Currency</string>
+    <string name="title_activity_current_chooser">CurrentChooserActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
